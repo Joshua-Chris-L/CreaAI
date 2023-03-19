@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    background: linear-gradient(45deg, #d2001a, #7462ff);
+  }
+
+  div.img {
+    display: flex; 
+  }
+
+  h1{
+    padding-top: 160px;
+  }
+  .tilt{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    border-radius: 2%;
+    height: 450px;
+    width: 450px;
+  }
+  
+  .secondImage {
+    margin-left: 120px;
+  }
+
+  div.button {
+    display: flex;
+  }
+  
+  button{
+    padding: 30px 70px;
+    margin-top: 20px;
+    border-radius: 40px;
+    box-shadow: 0px 8px 15px 0px rgba(194, 55, 55, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(85, 180, 189);
+    color: aliceblue;
+  }
+
+  .initializeMorph {
+    margin-left: 40px;
+    margin-top: auto;
+  }
+
+  .loading{
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: white;
+    animation: an1 1s ease infinite;
+  }
+ 
+  @keyframes an1 {
+    0% {
+      transform: rotate(0turn);
+    }
+    100% {
+      transform: rotate(1turn);
+    }
+    
+  }
+
+  button:hover{
+    background-color:rgb(105, 162, 162);
+  }
+
+  .morphedImages {
+    display: flex;
+    align-items: center;
+    padding-left: 400px;
+  }
+
+  .morphedImage_1 {
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+
